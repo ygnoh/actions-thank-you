@@ -1,5 +1,9 @@
 name: "Thank you"
 description: "Replying to participants"
+inputs:
+  token:
+    description: "github token"
+    required: true
 runs:
   using: "node12"
   main: "index.js"
