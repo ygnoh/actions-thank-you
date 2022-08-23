@@ -1,0 +1,5 @@
+name: "Thank you"
+description: "Replying to participants"
+runs:
+  using: "node12"
+  main: "index.js"
