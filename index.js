@@ -6,9 +6,11 @@ async function run() {
     const [owner, repo] = GITHUB_REPOSITORY.split("/");
     const token = core.getInput("token");
     const octokit = github.getOctokit(token)
-    const {data: pulls} = await octokit.rest.pulls.list({
+    const {data: pulls} = await octokit.rest.issues.createComment({
         owner,
         repo,
+        issue_number: 10,
+        body: "thank you"
     });
 
     console.log(pulls);
