@@ -11,7 +11,7 @@ async function run() {
         owner,
         repo,
         issue_number: prNum,
-        body: "thank you"
+        body: "Thank you for your contribution!"
     });
 
     console.log(pulls);
